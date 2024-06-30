@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Color Picker</title>
+      <link rel="stylesheet" href=" ./style.css"/>
+      <script src=" ./script.js"></script>
+   </head>
+   <body>
+      <div class="project-title"><h1>
+          <span style="color:red">R</span>
+          <span style="color:green">G</span>
+          <span style="color:blue">B</span>
+          Color Picker</h1>
+      </div>
+      <div class="description">
+          <p>Each parameter (red, green, and blue)
+          defines the intensity of the color with a value between 0 and 255.
+          This means that there are 16,777,216 possible colors!
+          Have fun!</p>
+      </div>
+      <div class="picker-form-container">
+          <div class="picker-control">
+              <label for="red">
+                <span style="color:red">RED</span>
+              </label>
+              <input type="range"
+                  name="red-range"
+                  class="picker"
+                  id="red"
+                  value="0"
+                  min="0"
+                  max="255">
+                <span id="redVal">0</span>
+           </div>
+          <div class="picker-control">
+              <label for="green">
+                <span style="color:green">GREEN</span>
+              </label>
+              <input type="range"
+                  name="green-range"
+                  class="picker"
+                  id="green"
+                  value="0"
+                  min="0"
+                  max="255">
+                <span id="greenVal">0</span>
+          </div>
+          <div class="picker-control">
+              <label for="blue">
+                <span style="color:blue">BLUE</span>
+              </label>
+              <input type="range"
+                  name="blue-range"
+                  class="picker"
+                  id="blue"
+                  value="0"
+                  min="0"
+                  max="255">
+                <span id="blueVal">0</span>
+          </div>
+      </div>
+          <div class="color-box-container">
+              <div id="color-box">
+              </div>
+          </div>
+   </body>
+</html>
